@@ -22,7 +22,7 @@ public class OrderHistory {
         new HomePage(driver).NoOrders();
     }
     @Test
-    public void OrderHistoryTest() throws SQLException {
+    public void OrderHistoryTest() throws SQLException, InterruptedException {
         new AddressPage(driver).pressSelectAddressButton().fillAddress("Mittelstraße 20 13055");
         new HomePage(driver).SearchProducts("Apfel Golden Delicious Kl.I 1 Stk. (Italien)");
         new CartPage(driver).Cart();
@@ -31,6 +31,7 @@ public class OrderHistory {
         new CheckoutPage(driver).Checkout("4111 1111 1111 1111", "03 30", "737", "Automation Tester");
         new TrackingPage(driver).order().equals("Order");
         new TrackingPage(driver).close();
+        driver.manage().wait(5000);
         new HomePage(driver).menu();
 
     }

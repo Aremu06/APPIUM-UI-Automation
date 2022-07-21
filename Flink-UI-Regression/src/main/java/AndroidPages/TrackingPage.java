@@ -10,11 +10,12 @@ import java.util.concurrent.TimeUnit;
 public class TrackingPage {
     private WebDriver driver;
 
-    public TrackingPage(WebDriver driver){
+    public TrackingPage(WebDriver driver) {
 
         this.driver = driver;
 
     }
+
     private By activeOrder = AppiumBy.xpath("//android.widget.TextView[@text='Order']");
     private By closeOrderTracking = AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"close\"]");
     private By copyOrderID = AppiumBy.xpath("//android.view.View/android.view.View[2]");
@@ -24,12 +25,9 @@ public class TrackingPage {
     private By sendChatButton = AppiumBy.id("send_button");
     private By NavigateBackFromInbox = AppiumBy.id("com.pickery.app.debug:id/intercom_toolbar_inbox");
     private By IntercomClose = AppiumBy.id("com.pickery.app.debug:id/intercom_toolbar_close");
-    //com.pickery.app.debug:id/send_button
-
-
-
-
-
+    private By openAddressDetails = AppiumBy.xpath("//android.view.ViewGroup/androidx.compose.ui.platform.ComposeView[2]/android.view.View/android.view.View[1]");
+    private By openMapView = AppiumBy.xpath("//android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout[2]");
+    private By mapViewButton = AppiumBy.xpath("//android.view.View/android.widget.Button");
 
 
     public TrackingPage order() {
@@ -37,6 +35,7 @@ public class TrackingPage {
 
         return this;
     }
+
     public TrackingPage close(){
         new TouchActions(driver).performElementAction().click(closeOrderTracking);
 
@@ -56,4 +55,9 @@ public class TrackingPage {
                 .click(IntercomClose);
         return this;
  }
+    public TrackingPage mapView(){
+        new TouchActions(driver).performElementAction()
+                .click(openAddressDetails).click(openMapView).click(mapViewButton);
+        return this;
+    }
 }

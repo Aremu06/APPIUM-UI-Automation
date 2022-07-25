@@ -19,10 +19,12 @@ public class AddressBook {
     }
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         driver = DriverFactory.getDriver();
     }
 
     @AfterMethod
-    public void teardown(){DriverFactory.closeAllDrivers();}
+    public void teardown() {
+        DriverFactory.closeAllDrivers();
+    }
 }

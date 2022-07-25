@@ -23,10 +23,12 @@ public class Vouchers {
     }
 
     @BeforeMethod
-    public void setup() { driver = DriverFactory.getDriver();
+    public void setup() {
+        driver = DriverFactory.getDriver();
     }
 
     @AfterMethod
-    public void teardown() {DriverFactory.closeAllDrivers();
+    public void teardown() {
+        DriverFactory.closeAllDrivers();
     }
 }

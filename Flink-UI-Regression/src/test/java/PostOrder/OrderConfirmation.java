@@ -25,11 +25,12 @@ public class OrderConfirmation {
     }
 
     @BeforeMethod
-    public void setup(){ driver = DriverFactory.getDriver();
+    public void setup() {
+        driver = DriverFactory.getDriver();
     }
 
     @AfterMethod
-    public void teardown(){
+    public void teardown() {
         DriverFactory.closeAllDrivers();
     }
 

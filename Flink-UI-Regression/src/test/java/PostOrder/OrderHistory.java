@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.sql.SQLException;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 
 public class OrderHistory {
@@ -21,6 +19,7 @@ public class OrderHistory {
         new AddressPage(driver).pressSelectAddressButton().fillAddress("Mittelstraße 20 13055");
         new HomePage(driver).NoOrders();
     }
+
     @Test
     public void OrderHistoryTest() throws SQLException, InterruptedException {
         new AddressPage(driver).pressSelectAddressButton().fillAddress("Mittelstraße 20 13055");
@@ -37,11 +36,12 @@ public class OrderHistory {
     }
 
     @BeforeMethod
-    public void setup(){ driver = DriverFactory.getDriver();
+    public void setup() {
+        driver = DriverFactory.getDriver();
     }
 
     @AfterMethod
-    public void teardown(){
+    public void teardown() {
         DriverFactory.closeAllDrivers();
     }
 }

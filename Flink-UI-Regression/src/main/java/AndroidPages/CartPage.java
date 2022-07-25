@@ -1,4 +1,5 @@
 package AndroidPages;
+
 import com.shaft.gui.element.TouchActions;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class CartPage {
     private WebDriver driver;
 
-    public  CartPage(WebDriver driver){
+    public CartPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -16,8 +17,6 @@ public class CartPage {
     private By backToHome = AppiumBy.id("com.pickery.app.debug:id/button_left");
     private By searchBackToHome = AppiumBy.id("com.pickery.app.debug:id/button_back");
     private By searchScreen = AppiumBy.id("com.pickery.app.debug:id/text_field");
-
-
 
 
 //    /*public  CartPage title() {

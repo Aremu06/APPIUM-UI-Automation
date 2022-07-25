@@ -28,7 +28,6 @@ public class OrderDetails {
         new OrderDetailsPage(driver).details();
 
 
-
     }
 
     @BeforeMethod

@@ -8,15 +8,16 @@ import org.openqa.selenium.WebDriver;
 public class OrderDetailsPage {
     private WebDriver driver;
 
-    public OrderDetailsPage(WebDriver driver){
+    public OrderDetailsPage(WebDriver driver) {
 
         this.driver = driver;
 
     }
 
     private By openOrderDetails = AppiumBy.xpath("//android.widget.LinearLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout");
-    private By orderDetails = AppiumBy.xpath("//android.widget.TextView[@text='Order Details']");
-
+    private By copyOrderID = AppiumBy.xpath("//android.view.View/android.view.View");
+    private By backToTrackingPage = AppiumBy.xpath("//android.widget.ImageView[@content-desc='close']");
+    private By closeOrderTracking = AppiumBy.xpath("//android.widget.ImageView[@content-desc='close']");
 
 
     public OrderDetailsPage details() {
@@ -24,10 +25,10 @@ public class OrderDetailsPage {
                 ".scrollIntoView(new UiSelector().text(\"Cancel order\"))"));
 
         new TouchActions(driver).performElementAction()
-                .click(openOrderDetails)
-                .click(orderDetails)
-                .getText(orderDetails);
+                .click(openOrderDetails).click(copyOrderID)
+                .click(backToTrackingPage).click(closeOrderTracking);
         return this;
 
-  }
+    }
+
 }

@@ -28,8 +28,6 @@ public class CopyOrderID {
         new TrackingPage(driver).copyOrder();
 
 
-
-
     }
 
     @BeforeMethod

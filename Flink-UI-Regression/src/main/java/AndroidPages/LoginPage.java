@@ -9,30 +9,31 @@ public class LoginPage {
     private WebDriver driver;
 
 
-    public LoginPage(WebDriver driver){
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
     private By createAccountPageTitle = AppiumBy.xpath("//*[contains(@resource-id, 'label_title')]");
     private By AlreadyHaveAccountLoginLink = AppiumBy.xpath("//*[contains(@resource-id, 'button_login')]");
-    private By loginButton            = AppiumBy.xpath("//*[contains(@resource-id, 'button_login')]");
-    private By emailInput             = AppiumBy.xpath("//*[contains(@resource-id, 'text_field_email')]");
-    private By passWordInput          = AppiumBy.xpath("//*[contains(@resource-id, 'text_field_password')]");
-    private By forgotPasswordLink     = AppiumBy.xpath("//*[contains(@resource-id, 'textview_forgot_password')]");
+    private By loginButton = AppiumBy.xpath("//*[contains(@resource-id, 'button_login')]");
+    private By emailInput = AppiumBy.xpath("//*[contains(@resource-id, 'text_field_email')]");
+    private By passWordInput = AppiumBy.xpath("//*[contains(@resource-id, 'text_field_password')]");
+    private By forgotPasswordLink = AppiumBy.xpath("//*[contains(@resource-id, 'textview_forgot_password')]");
     private By resetPasswordEmailField = AppiumBy.id("com.pickery.app.debug:id/text_field_email");
     private By sendInstructionCTA = AppiumBy.id("com.pickery.app.debug:id/cta");
 
-    public LoginPage User(String UserEmail, String UserPassword){
+    public LoginPage User(String UserEmail, String UserPassword) {
         new TouchActions(driver).performElementAction()
                 .click(AlreadyHaveAccountLoginLink)
                 .click(loginButton)
                 .typeAppend(emailInput, UserEmail)
-                .typeAppend(passWordInput,UserPassword)
+                .typeAppend(passWordInput, UserPassword)
                 .click(loginButton);
 
         return this;
     }
-    public LoginPage forgotPassword(String UserEmail){
+
+    public LoginPage forgotPassword(String UserEmail) {
         new TouchActions(driver).performElementAction()
                 .click(AlreadyHaveAccountLoginLink)
                 .click(loginButton)

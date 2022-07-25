@@ -14,7 +14,7 @@ public class EditAddress {
 
 
     @Test
-    public void DeleteAddressTest() throws SQLException{
+    public void DeleteAddressTest() throws SQLException {
         new AddressPage(driver).pressSelectAddressButton().fillAddress("Mittelstraße 20 13055");
         new AddressPage(driver).addressBook("Lobeckstrasse 30");
         new AddressPage(driver).deleteAddress();
@@ -23,12 +23,13 @@ public class EditAddress {
     }
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         driver = DriverFactory.getDriver();
     }
 
     @AfterMethod
-    public void teardown(){
-        DriverFactory.closeAllDrivers();}
+    public void teardown() {
+        DriverFactory.closeAllDrivers();
+    }
 }
 

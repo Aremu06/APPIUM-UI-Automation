@@ -21,12 +21,12 @@ public class GuestUser {
     }
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         driver = DriverFactory.getDriver();
     }
 
     @AfterMethod
-    public void teardown(){
+    public void teardown() {
         DriverFactory.closeAllDrivers();
     }
 }

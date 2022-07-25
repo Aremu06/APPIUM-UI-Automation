@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class CancellationPage {
     private WebDriver driver;
 
-    public CancellationPage(WebDriver driver){
+    public CancellationPage(WebDriver driver) {
 
         this.driver = driver;
 
@@ -20,8 +20,8 @@ public class CancellationPage {
     private By finalCancellationButton = AppiumBy.xpath("//android.view.View/android.view.View[2]/android.view.View[6]/android.widget.Button");
 
 
-    public CancellationPage cancelOrder(){
-        driver.findElement(AppiumBy.androidUIAutomator( "new UiScrollable(new UiSelector().scrollable(true))" +
+    public CancellationPage cancelOrder() {
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))" +
                 ".scrollIntoView(new UiSelector().text(\"Cancel order\"))"));
         new TouchActions(driver).performElementAction()
                 .click(orderCancellationButton)

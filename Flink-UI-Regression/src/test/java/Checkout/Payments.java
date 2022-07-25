@@ -33,7 +33,7 @@ public class Payments {
         new CartPage(driver).Cart();
         new CheckoutPage(driver).savedCCPaymentOption();
 
-}
+    }
 
     @Test // TODO fix me
     public void PayPalpaymentTest() throws InterruptedException {

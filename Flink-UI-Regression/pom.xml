@@ -10,7 +10,7 @@
 
     <properties>
         <!-- Make sure to star the project on github to get notified and update to the latest version: https://github.com/MohabMohie/SHAFT_ENGINE/releases -->
-        <shaft_engine.version>6.2.20220609</shaft_engine.version>
+        <shaft_engine.version>6.3.20220729</shaft_engine.version>
     </properties>
     <repositories>
         <repository>
@@ -24,7 +24,7 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>io.github.mohabmohie</groupId>
+            <groupId>io.github.shafthq</groupId>
             <artifactId>SHAFT_ENGINE</artifactId>
             <version>${shaft_engine.version}</version>
         </dependency>
@@ -51,7 +51,7 @@
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
-                        <version>1.9.7</version>
+                        <version>1.9.9.1</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -60,7 +60,7 @@
                     <encoding>UTF-8</encoding>
                     <argLine>
                         -Dtestng.dtd.http=true
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar"
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.9.1/aspectjweaver-1.9.9.1.jar"
                     </argLine>
                     <properties>
                         <property>

@@ -1,0 +1,55 @@
+################################################################################################################################################
+Detected SHAFT Engine Version: "SHAFT Engine v6.3.20220729"
+################################################################################################################################################
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @04-08-2022 20:01:33.0966 pm
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @04-08-2022 20:01:33.0966 pm
+[ReportManager] Attempting to run remotely on: "Android | http://0.0.0.0:4723/wd/hub". @04-08-2022 20:01:33.0983 pm
+[ReportManager] Capabilities {appActivity: com.flink.consumer.feature...., appPackage: com.pickery.app.debug, automationName: UiAutomator2, deviceName: Galaxy S21 5G, platformName: ANDROID, platformVersion: 12, resetKeyboard: true, udid: R3CRA026E6M, unicodeKeyboard: true} @04-08-2022 20:01:33.0986 pm
+[ReportManager] Successfully Opened "NativeMobileApp". @04-08-2022 20:01:41.0861 p
+
+################################################################################################################################################
+Starting Execution:	"1 out of 1" test cases in the current suite
+Test Method:		"PostOrder.EditDetails.EditDetailsTest"
+################################################################################################################################################
+[ReportManager] Tap "Select your address". @04-08-2022 20:01:45.0023 pm
+[ReportManager] Type append "Mittelstraße 20 13055". @04-08-2022 20:01:46.0561 pm
+[ReportManager] Tap "By.xpath: //android.view.View[2]/android.view.View[3]". @04-08-2022 20:01:47.0976 pm
+[ReportManager] Tap "By.xpath: //android.view.View/android.widget.ScrollView/android.view.View/android.widget.Button". @04-08-2022 20:01:49.0494 pm
+[ReportManager] Tap "Search for products, brands ...". @04-08-2022 20:01:52.0059 pm
+[ReportManager] Type append "Apfel Golden Delicious Kl.I 1 Stk. (Italien)". @04-08-2022 20:01:55.0065 pm
+[ReportManager] Tap "AppiumBy.id: button_plus". @04-08-2022 20:01:57.0450 pm
+[ReportManager] Tap "AppiumBy.id: button_plus". @04-08-2022 20:01:58.0602 pm
+[ReportManager] Tap "AppiumBy.id: button_plus". @04-08-2022 20:01:58.0811 pm
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @04-08-2022 20:01:59.0964 pm
+[ReportManager] Verification Passed: The Element located by "By.xpath: //android.widget.TextView[@text='Shopping cart']" exists. @04-08-2022 20:02:03.0378 pm
+[ReportManager] Successfully created attachment "Screenshot - 1659636122831_EditDetailsTest_ValidateElementExists_passed" @04-08-2022 20:02:03.0396 pm
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @04-08-2022 20:02:03.0683 pm
+[ReportManager] Tap "By.xpath: //android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button". @04-08-2022 20:02:05.0809 pm
+[ReportManager] Tap "Login". @04-08-2022 20:02:06.0038 pm
+[ReportManager] Tap "Login". @04-08-2022 20:02:06.0843 pm
+[ReportManager] Type append "tauto@gmail.com". @04-08-2022 20:02:08.0205 pm
+[ReportManager] Type append "111111". @04-08-2022 20:02:09.0893 pm
+[ReportManager] Tap "Login". @04-08-2022 20:02:10.0593 pm
+[ReportManager] Verification Passed: The Element located by "By.xpath: //android.widget.TextView[@text='Shopping cart']" exists. @04-08-2022 20:02:14.0132 pm
+[ReportManager] Successfully created attachment "Screenshot - 1659636134013_EditDetailsTest_ValidateElementExists_passed" @04-08-2022 20:02:14.0135 pm
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @04-08-2022 20:02:14.0389 pm
+[ReportManager] Tap "By.xpath: //android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button". @04-08-2022 20:02:16.0321 pm
+[ReportManager] Tap "AppiumBy.id: button_checkout_buy_now". @04-08-2022 20:02:23.0152 pm
+[ReportManager] Tap "Kreditkarte". @04-08-2022 20:02:25.0055 pm
+[ReportManager] Type append "4111 1111 1111 1111". @04-08-2022 20:02:26.0720 pm
+[ReportManager] Type append "03 30". @04-08-2022 20:02:28.0116 pm
+[ReportManager] Type append "737". @04-08-2022 20:02:29.0527 pm
+[ReportManager] Type append "Automation Tester". @04-08-2022 20:02:30.0995 pm
+[ReportManager] Tap "PAY €5.15". @04-08-2022 20:02:31.0947 pm
+[ReportManager] Tap "Order". @04-08-2022 20:02:37.0816 pm
+[ReportManager] Get text "Order". @04-08-2022 20:02:38.0026 pm
+[ReportManager] Tap "By.xpath: //android.view.ViewGroup/androidx.compose.ui.platform.ComposeView[2]/android.view.View/android.view.View[1]". @04-08-2022 20:02:38.0316 pm
+[ReportManager] Type append "Find me in berlin office". @04-08-2022 20:02:43.0549 pm
+[ReportManager] Tap "By.xpath: //android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.Button". @04-08-2022 20:02:44.0395 p
+[ReportManager] Successfully Closed All Drivers. @04-08-2022 20:02:44.0879 p
+[ReportManager] Successfully created attachment "SHAFT Engine Logs - Execution log" @04-08-2022 20:02:44.0888 pm
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: "SHAFT Engine v6.3.20220729"
+SHAFT Engine is licensed under the MIT License: [https://github.com/ShaftHQ/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################

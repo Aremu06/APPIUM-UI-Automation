@@ -1,2 +1,0 @@
-[ReportManager] Successfully created attachment "Video Recording - teardown" @25-07-2022 14:00:45.0100 pm
-[ReportManager] Successfully Closed All Drivers. @25-07-2022 14:00:45.0630 p

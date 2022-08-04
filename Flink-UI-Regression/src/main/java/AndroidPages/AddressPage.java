@@ -21,8 +21,8 @@ public class AddressPage {
     private By addAddressText = AppiumBy.xpath("//androidx.compose.ui.platform.ComposeView//android.view.View//android.widget.EditText");
     private By addressSuggestion = AppiumBy.xpath("//android.view.View[2]/android.view.View[3]");
     private By confirmAddress = AppiumBy.xpath("//android.view.View/android.widget.ScrollView/android.view.View/android.widget.Button");
-    private By addressLabel = AppiumBy.id("com.pickery.app.debug:id/label_address");
-    private By addNewAddress = AppiumBy.id("com.pickery.app.debug:id/button_new_address");
+    private By addressLabel = AppiumBy.id("label_address");
+    private By addNewAddress = AppiumBy.id("button_new_address");
     private By buttonGuest = AppiumBy.id("button_guest");
     private By selectCountry = AppiumBy.xpath("//android.widget.TextView[@text='Germany']");
     private By selectCountryButton = AppiumBy.id("button_select_country");

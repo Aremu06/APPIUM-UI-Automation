@@ -19,8 +19,8 @@ public class LoginPage {
     private By emailInput = AppiumBy.xpath("//*[contains(@resource-id, 'text_field_email')]");
     private By passWordInput = AppiumBy.xpath("//*[contains(@resource-id, 'text_field_password')]");
     private By forgotPasswordLink = AppiumBy.xpath("//*[contains(@resource-id, 'textview_forgot_password')]");
-    private By resetPasswordEmailField = AppiumBy.id("com.pickery.app.debug:id/text_field_email");
-    private By sendInstructionCTA = AppiumBy.id("com.pickery.app.debug:id/cta");
+    private By resetPasswordEmailField = AppiumBy.id("text_field_email");
+    private By sendInstructionCTA = AppiumBy.id("cta");
 
     public LoginPage User(String UserEmail, String UserPassword) {
         new TouchActions(driver).performElementAction()

@@ -16,7 +16,7 @@ public class CheckoutPage {
         this.driver = driver;
     }
 
-    private By backToCart = AppiumBy.id("com.pickery.app.debug:id/button_left");
+    private By backToCart = AppiumBy.id("button_left");
     private By commentInput = AppiumBy.xpath("//android.widget.EditText[@index='6']");
     private By discountCodeIcon = AppiumBy.accessibilityId("discount icon");
     private By discountCodeInput = AppiumBy.xpath("//android.widget.EditText/android.view.View");

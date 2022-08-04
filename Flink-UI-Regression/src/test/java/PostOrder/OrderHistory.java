@@ -26,12 +26,10 @@ public class OrderHistory {
         new HomePage(driver).SearchProducts("Apfel Golden Delicious Kl.I 1 Stk. (Italien)");
         new CartPage(driver).Cart();
         new LoginPage(driver).User("tauto@gmail.com", "111111");
-        new CartPage(driver).Cart();
-        new CheckoutPage(driver).Checkout("4111 1111 1111 1111", "03 30", "737", "Automation Tester");
-        new TrackingPage(driver).order().equals("Order");
-        new TrackingPage(driver).close();
-        driver.manage().wait(5000);
+        new CheckoutPage(driver).backToCartScreen();
+        new CartPage(driver).backToHomePage();;
         new HomePage(driver).menu();
+        new OrderHistoryPage(driver).OrderList();
 
     }
 

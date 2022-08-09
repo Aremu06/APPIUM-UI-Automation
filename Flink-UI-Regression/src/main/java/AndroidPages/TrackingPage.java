@@ -68,8 +68,12 @@ public class TrackingPage {
     public TrackingPage editDetails(String noteToRider) {
 
         new TouchActions(driver).performElementAction().click(openAddressDetails);
+
+      //  Validations.verifyThat().element(driver, editDetailsButton).isVisible().perform();
+
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))" +
                 ".scrollIntoView(new UiSelector().text(\"Edit details\"))")).click();
+
         new TouchActions(driver).performElementAction().typeAppend(deliveryNoteTextField,noteToRider).click(saveButton);
         return this;
     }

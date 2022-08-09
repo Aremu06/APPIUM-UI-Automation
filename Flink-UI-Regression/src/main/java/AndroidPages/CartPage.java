@@ -4,6 +4,7 @@ import com.shaft.gui.element.TouchActions;
 import com.shaft.validation.Validations;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class CartPage {
@@ -26,7 +27,15 @@ public class CartPage {
 
         Validations.verifyThat().element(driver, CartPageTitle).exists().perform();
 
-        new TouchActions(driver).performElementAction().click(checkoutButton).click(highPDTButton);
+
+        try {
+            new TouchActions(driver).performElementAction().click(checkoutButton).click(highPDTButton);
+        }
+        catch(NoSuchElementException e){
+            new TouchActions(driver).performElementAction().click(checkoutButton);
+            System.out.println("High Pdt is not exist " + e );
+        }
+
 
         return this;
     }

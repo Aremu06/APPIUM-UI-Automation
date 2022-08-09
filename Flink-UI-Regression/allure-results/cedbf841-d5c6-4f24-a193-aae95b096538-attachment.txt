@@ -1,0 +1,5 @@
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @09-08-2022 13:53:01.0770 pm
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @09-08-2022 13:53:01.0771 pm
+[ReportManager] Attempting to run remotely on: "Android | http://0.0.0.0:4723/wd/hub". @09-08-2022 13:53:01.0790 pm
+[ReportManager] Capabilities {appActivity: com.flink.consumer.feature...., appPackage: com.pickery.app.debug, automationName: UiAutomator2, deviceName: Galaxy S21 5G, platformName: ANDROID, platformVersion: 12, resetKeyboard: true, udid: R3CRA026E6M, unicodeKeyboard: true} @09-08-2022 13:53:01.0795 pm
+[ReportManager] Successfully Opened "NativeMobileApp". @09-08-2022 13:53:10.0415 p

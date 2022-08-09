@@ -22,7 +22,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -listener com.shaft.tools.listeners.AlterSuiteListener;com.shaft.tools.listeners.InvokedMethodListener;com.shaft.tools.listeners.SuiteListener -socket61703 @w@/private/var/folders/b2/j496h0zn5zx4s9c1c6z961180000gn/T/idea_working_dirs_testng.tmp -temp /private/var/folders/b2/j496h0zn5zx4s9c1c6z961180000gn/T/idea_testng.tmp</value>
+    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -listener com.shaft.tools.listeners.AlterSuiteListener;com.shaft.tools.listeners.InvokedMethodListener;com.shaft.tools.listeners.SuiteListener -socket57875 @w@/private/var/folders/b2/j496h0zn5zx4s9c1c6z961180000gn/T/idea_working_dirs_testng.tmp -temp /private/var/folders/b2/j496h0zn5zx4s9c1c6z961180000gn/T/idea_testng.tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -125,6 +125,10 @@
     <value>true</value>
   </parameter>
   <parameter>
+    <key>https.proxyPort</key>
+    <value>9090</value>
+  </parameter>
+  <parameter>
     <key>user.timezone</key>
     <value>Europe/Berlin</value>
   </parameter>
@@ -217,6 +221,10 @@
     <value>allure-results/videos</value>
   </parameter>
   <parameter>
+    <key>http.proxyPort</key>
+    <value>9090</value>
+  </parameter>
+  <parameter>
     <key>setPreserveOrder</key>
     <value>true</value>
   </parameter>
@@ -285,6 +293,10 @@
     <value>Android</value>
   </parameter>
   <parameter>
+    <key>http.proxyHost</key>
+    <value>127.0.0.1</value>
+  </parameter>
+  <parameter>
     <key>allureVersion</key>
     <value>2.18.1</value>
   </parameter>
@@ -307,6 +319,10 @@
   <parameter>
     <key>apiSocketTimeout</key>
     <value>30</value>
+  </parameter>
+  <parameter>
+    <key>https.proxyHost</key>
+    <value>127.0.0.1</value>
   </parameter>
   <parameter>
     <key>createAnimatedGif</key>

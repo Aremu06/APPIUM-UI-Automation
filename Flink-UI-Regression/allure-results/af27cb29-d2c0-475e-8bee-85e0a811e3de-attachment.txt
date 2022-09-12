@@ -1,0 +1,25 @@
+
+################################################################################################################################################
+Starting Execution:	"1 out of 1" test cases in the current suite
+Test Method:		"Checkout.RiderTips.RiderTipTest"
+################################################################################################################################################
+[ReportManager] Tap "Select your address". @13-09-2022 00:17:45.0209 am
+[ReportManager] Type append "Mittelstraße 20 13055". @13-09-2022 00:17:46.0826 am
+[ReportManager] Tap "By.xpath: //android.view.View[2]/android.view.View[3]". @13-09-2022 00:17:48.0295 am
+[ReportManager] Tap "By.xpath: //android.view.View/android.widget.ScrollView/android.view.View/android.widget.Button". @13-09-2022 00:17:51.0091 am
+[ReportManager] Tap "Kategorien". @13-09-2022 00:17:58.0294 am
+[ReportManager] Tap "Search for products, brands ...". @13-09-2022 00:17:58.0661 am
+[ReportManager] Type append "Apfel Golden Delicious Kl.I 1 Stk. (Italien)". @13-09-2022 00:18:00.0429 am
+[ReportManager] Tap "AppiumBy.id: button_plus". @13-09-2022 00:18:02.0976 am
+[ReportManager] Tap "AppiumBy.id: button_plus". @13-09-2022 00:18:04.0162 am
+[ReportManager] Tap "AppiumBy.id: button_plus". @13-09-2022 00:18:05.0334 am
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @13-09-2022 00:18:05.0561 am
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @13-09-2022 00:18:07.0621 am
+[ReportManager] Tap "Login". @13-09-2022 00:18:14.0178 am
+[ReportManager] Type append "tauto@gmail.com". @13-09-2022 00:18:15.0405 am
+[ReportManager] Type append "111111". @13-09-2022 00:18:16.0578 am
+[ReportManager] Tap "Login". @13-09-2022 00:18:17.0337 am
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @13-09-2022 00:18:20.0391 am
+[ReportManager] Tap "By.xpath: //android.view.View/android.view.View[2]/android.widget.Button". @13-09-2022 00:18:32.0615 am
+[ReportManager] Tap "By.xpath: //android.view.View/android.view.View[2]/android.widget.Button". @13-09-2022 00:18:33.0007 am
+[ReportManager] Tap "By.xpath: //android.view.View/android.view.View[2]/android.widget.Button". @13-09-2022 00:18:34.0361 a

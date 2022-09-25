@@ -1,0 +1,35 @@
+
+################################################################################################################################################
+Starting Execution:	"1 out of 1" test cases in the current suite
+Test Method:		"Checkout.PrivacyLinks.PrivacyLinksTest"
+################################################################################################################################################
+[ReportManager] Tap "Select your address". @21-09-2022 14:14:01.0292 pm
+[ReportManager] Type append "Mittelstraße 20 13055". @21-09-2022 14:14:03.0241 pm
+[ReportManager] Tap "By.xpath: //android.view.View[2]/android.view.View[3]". @21-09-2022 14:14:05.0445 pm
+[ReportManager] Tap "By.xpath: //android.view.View/android.widget.ScrollView/android.view.View/android.widget.Button". @21-09-2022 14:14:07.0134 pm
+[ReportManager] Tap "By.xpath: //android.view.View/android.view.View[1]/android.widget.Button". @21-09-2022 14:14:09.0057 pm
+[ReportManager] Tap "Kategorien". @21-09-2022 14:14:10.0187 pm
+[ReportManager] Tap "Search for products, brands ...". @21-09-2022 14:14:10.0415 pm
+[ReportManager] Type append "Apfel Golden Delicious Kl.I 1 Stk. (Italien)". @21-09-2022 14:14:12.0200 pm
+[ReportManager] Tap "AppiumBy.id: button_plus". @21-09-2022 14:14:14.0505 pm
+[ReportManager] Tap "AppiumBy.id: button_plus". @21-09-2022 14:14:15.0704 pm
+[ReportManager] Tap "AppiumBy.id: button_plus". @21-09-2022 14:14:15.0933 pm
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @21-09-2022 14:14:17.0133 pm
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @21-09-2022 14:14:19.0185 pm
+[ReportManager] Tap "Login". @21-09-2022 14:14:25.0660 pm
+[ReportManager] Type append "tauto@gmail.com". @21-09-2022 14:14:26.0870 pm
+[ReportManager] Type append "111111". @21-09-2022 14:14:28.0033 pm
+[ReportManager] Tap "Login". @21-09-2022 14:14:28.0788 pm
+[ReportManager] Tap "AppiumBy.id: button_basket_base". @21-09-2022 14:14:31.0794 pm
+[ReportManager] Expected condition failed: waiting for com.shaft.gui.element.ElementActionsHelper$$Lambda$648/0x00000008010c9ed0@d6879bf (tried for 0 second(s) with 100 milliseconds interval) || An element could not be located on the page using the given search parameters. @21-09-2022 14:14:38.0525 pm
+[ReportManager] Swiping to find Element using W3C Compliant Actions. SwipeDirection "DOWN", TargetElementLocator "AppiumBy.id: button_checkout_buy_now". @21-09-2022 14:14:38.0526 pm
+[ReportManager] Attempted to scroll using these parameters: "{width=1080, top=100, percent=0.8, left=0, height=1958, direction=DOWN}", there is still more room to keep scrolling. @21-09-2022 14:14:39.0967 pm
+[ReportManager] Expected condition failed: waiting for com.shaft.gui.element.ElementActionsHelper$$Lambda$648/0x00000008010c9ed0@43c64d6f (tried for 0 second(s) with 100 milliseconds interval) || An element could not be located on the page using the given search parameters. @21-09-2022 14:14:40.0457 pm
+[ReportManager] Swiping to find Element using W3C Compliant Actions. SwipeDirection "DOWN", TargetElementLocator "AppiumBy.id: button_checkout_buy_now". @21-09-2022 14:14:40.0457 pm
+[ReportManager] Attempted to scroll using these parameters: "{width=1080, top=100, percent=0.8, left=0, height=1958, direction=DOWN}", there is no more room to keep scrolling. @21-09-2022 14:14:40.0856 pm
+[ReportManager] Element found on screen. @21-09-2022 14:14:41.0397 pm
+[ReportManager] Swipe element into view. @21-09-2022 14:14:41.0398 pm
+[ReportManager] Tap "By placing your order you agree to our terms and conditions and confirm that you have read our rights of withdrawal and our privacy policy.". @21-09-2022 14:14:45.0298 pm
+[ReportManager] Expected condition failed: waiting for com.shaft.gui.element.ElementActionsHelper$$Lambda$648/0x00000008010c9ed0@17e7cc67 (tried for 60 second(s) with 100 milliseconds interval) || An element could not be located on the page using the given search parameters. @21-09-2022 14:15:45.0445 pm
+[ReportManager] Identify unique element failed "zero elements found matching this locator "By.xpath: //android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[2]/android.view.View/android.widget.Button[2]".". @21-09-2022 14:15:47.0194 pm
+[ReportManager] Successfully created attachment "Screenshot - 1663762545803_PrivacyLinksTest_Identify unique element_failed" @21-09-2022 14:15:47.0215 p

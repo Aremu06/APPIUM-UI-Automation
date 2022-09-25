@@ -3,14 +3,18 @@ package AndroidPages;
 import com.shaft.gui.element.TouchActions;
 import com.shaft.validation.Validations;
 import io.appium.java_client.AppiumBy;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+
+import java.time.Duration;
 
 public class CartPage {
-    private WebDriver driver;
+    private AndroidDriver driver;
 
-    public CartPage(WebDriver driver) {
+    public CartPage(AndroidDriver driver) {
+
         this.driver = driver;
     }
 
@@ -25,20 +29,34 @@ public class CartPage {
 
     public CartPage Cart() {
 
-        Validations.verifyThat().element(driver, CartPageTitle).exists().perform();
 
+        new TouchActions(driver).performElementAction().click(checkoutButton);
 
         try {
-            new TouchActions(driver).performElementAction().click(checkoutButton).click(highPDTButton);
-        }
-        catch(NoSuchElementException e){
-            new TouchActions(driver).performElementAction().click(checkoutButton);
-            System.out.println("High Pdt is not exist " + e );
-        }
 
+            FluentWait wait = new FluentWait(driver);
+            wait.withTimeout(Duration.ofSeconds(6));
+            wait.pollingEvery(Duration.ofSeconds(3));
+            wait.ignoring(NoSuchElementException.class);
+
+
+            wait.until(ExpectedConditions.visibilityOfElementLocated(highPDTButton));
+            driver.findElement(highPDTButton).click();
+            System.out.println("High Pdt Exist");
+        }
+        catch (NoSuchElementException e ) {
+            System.out.println("High Pdt Does Not Exist  -  No Such Element");
+
+        }
+        catch (TimeoutException e ) {
+            System.out.println("High Pdt Does Not Exist  -  TimeOut");
+
+        }
 
         return this;
     }
+
+
 
     public CartPage backToHomePage() {
         new TouchActions(driver).performElementAction().click(searchScreen).click(searchBackToHome);

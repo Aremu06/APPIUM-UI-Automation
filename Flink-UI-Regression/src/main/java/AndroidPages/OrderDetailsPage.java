@@ -2,15 +2,16 @@ package AndroidPages;
 
 import com.shaft.gui.element.TouchActions;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class OrderDetailsPage {
-    private WebDriver driver;
+    private AndroidDriver driver;
 
-    public OrderDetailsPage(WebDriver driver) {
+    public OrderDetailsPage(AndroidDriver driver) {
 
-        this.driver = driver;
+        this.driver =  driver;
 
     }
 

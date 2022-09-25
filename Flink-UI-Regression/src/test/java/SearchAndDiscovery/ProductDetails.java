@@ -24,7 +24,14 @@ public class ProductDetails {
        @Test
        public void ProductDetailsLayerDismissTest () throws InterruptedException {
            new AddressPage(driver).pressSelectAddressButton().fillAddress("Lobeckstrasse 30");
-           new HomePage(driver).NavigateUp();
+           new HomePage(driver).obstCategory();
+
+       }
+       @Test
+        public void horizontalCategoryCheck() throws InterruptedException {
+           new AddressPage(driver).pressSelectAddressButton().fillAddress("Lobeckstrasse 30");
+           new HomePage(driver).categoryHorizontalScrolling();
+
 
        }
        @BeforeMethod

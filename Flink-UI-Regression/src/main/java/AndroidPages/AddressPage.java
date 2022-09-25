@@ -3,14 +3,14 @@ package AndroidPages;
 
 import com.shaft.gui.element.TouchActions;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class AddressPage {
-    private WebDriver driver;
+    private AndroidDriver driver;
 
 
-    public AddressPage(WebDriver driver) {
+    public AddressPage(AndroidDriver driver) {
 
         this.driver = driver;
 
@@ -20,6 +20,7 @@ public class AddressPage {
     private By selectAddressButton = AppiumBy.id("button_start");
     private By addAddressText = AppiumBy.xpath("//androidx.compose.ui.platform.ComposeView//android.view.View//android.widget.EditText");
     private By addressSuggestion = AppiumBy.xpath("//android.view.View[2]/android.view.View[3]");
+    private By DeliveryCommentInput = AppiumBy.xpath("//android.view.View[3]/android.widget.ScrollView/android.widget.EditText/android.view.View");
     private By confirmAddress = AppiumBy.xpath("//android.view.View/android.widget.ScrollView/android.view.View/android.widget.Button");
     private By addressLabel = AppiumBy.id("label_address");
     private By addNewAddress = AppiumBy.id("button_new_address");
@@ -34,6 +35,7 @@ public class AddressPage {
     private By deleteButton = AppiumBy.xpath("//android.widget.ScrollView/android.view.View[3]/android.widget.Button");
     private By keepAddressButton = AppiumBy.xpath("//android.view.View/android.view.View[2]/android.widget.Button");
     private By deleteAddressButton = AppiumBy.xpath("//android.view.View/android.view.View[1]/android.widget.Button");
+    private By acceptCookies = AppiumBy.xpath("//android.view.View/android.view.View[1]/android.widget.Button");
 
 
     public AddressPage pressSelectAddressButton() {
@@ -47,9 +49,10 @@ public class AddressPage {
                 .performElementAction()
                 .typeAppend(addAddressText, address)
                 .click(addressSuggestion)
-                .click(confirmAddress);
+                .click(confirmAddress).click(acceptCookies);
 
         return this;
+
     }
 
     public AddressPage addressBook(String address) {

@@ -3,13 +3,14 @@ package AndroidPages;
 import com.shaft.gui.element.TouchActions;
 import com.shaft.validation.Validations;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class OrderHistoryPage {
-    private WebDriver driver;
+    private AndroidDriver driver;
 
-    public OrderHistoryPage(WebDriver driver) {
+    public OrderHistoryPage(AndroidDriver driver) {
 
         this.driver = driver;
 

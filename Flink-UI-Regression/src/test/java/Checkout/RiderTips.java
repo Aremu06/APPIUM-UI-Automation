@@ -2,6 +2,7 @@ package Checkout;
 
 import AndroidPages.*;
 import com.shaft.driver.DriverFactory;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +12,7 @@ import java.sql.SQLException;
 
 public class RiderTips {
 
-    private WebDriver driver;
+    private AndroidDriver driver;
 
     @Test
     public void RiderTipTest() throws SQLException {
@@ -27,7 +28,7 @@ public class RiderTips {
 
     @BeforeMethod
     public void setup() {
-        driver = DriverFactory.getDriver();
+        driver = (AndroidDriver) DriverFactory.getDriver();
     }
 
     @AfterMethod

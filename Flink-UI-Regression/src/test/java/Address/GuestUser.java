@@ -2,6 +2,7 @@ package Address;
 
 import AndroidPages.AddressPage;
 import com.shaft.driver.DriverFactory;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,7 +11,7 @@ import org.testng.annotations.Test;
 import java.sql.SQLException;
 
 public class GuestUser {
-    private WebDriver driver;
+    private AndroidDriver driver;
 
 
     @Test
@@ -22,7 +23,7 @@ public class GuestUser {
 
     @BeforeMethod
     public void setup() {
-        driver = DriverFactory.getDriver();
+        driver = (AndroidDriver) DriverFactory.getDriver();
     }
 
     @AfterMethod

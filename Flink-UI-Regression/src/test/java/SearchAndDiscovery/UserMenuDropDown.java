@@ -15,9 +15,11 @@ public class UserMenuDropDown {
 
 
     @Test
-    public void UserMenuDropDownTest() throws NoSuchElementException {
+    public void UserMenuDropDownTest() throws InterruptedException {
         new AddressPage(driver).pressSelectAddressButton().fillAddress("Mittelstraße 20 13055");
         new UserProfilePage(driver).DropDownMenu();
+
+
     }
 
     @BeforeMethod

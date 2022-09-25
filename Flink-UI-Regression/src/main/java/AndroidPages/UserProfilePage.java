@@ -76,29 +76,19 @@ public class UserProfilePage {
         //.click(signOut);
         return this;
 
-    } // TODO fix me
-    public UserProfilePage DropDownMenu() {
+    }
+    public UserProfilePage DropDownMenu() throws InterruptedException {
         new TouchActions(driver).performElementAction().click(homeMenuButton);
-        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))" +
-                ".scrollIntoView(new UiSelector().text(\"Imprint\"))"));
 
-        try {
-            FluentWait wait = new FluentWait(driver);
-            wait.withTimeout(Duration.ofSeconds(5));
-            wait.pollingEvery(Duration.ofSeconds(3));
-            wait.ignoring(NoSuchElementException.class);
+        new TouchActions(driver).swipeElementIntoView(Imprint, TouchActions.SwipeDirection.DOWN);
 
-            wait.until(ExpectedConditions.visibilityOfElementLocated(Imprint));
-        } catch (NoSuchElementException e) {
+        Validations.verifyThat().element(driver, FAQ).exists().perform();
+        Validations.verifyThat().element(driver, ContactCustomerService).exists().perform();
+        Validations.verifyThat().element(driver, GiveFeedback).exists().perform();
+        Validations.verifyThat().element(driver, PrivacyPolicy).exists().perform();
+        Validations.verifyThat().element(driver, TermsAndConditions).exists().perform();
+        Validations.verifyThat().element(driver, Imprint).exists().perform();
 
-        }
-            Validations.verifyThat().element(driver, FAQ).exists().perform();
-            Validations.verifyThat().element(driver, ContactCustomerService).exists().perform();
-            Validations.verifyThat().element(driver, GiveFeedback).exists().perform();
-            Validations.verifyThat().element(driver, PrivacyPolicy).exists().perform();
-            Validations.verifyThat().element(driver, TermsAndConditions).exists().perform();
-            Validations.verifyThat().element(driver, Imprint).exists().perform();
-
-            return this;
-        }
+        return this;
+    }
 }
